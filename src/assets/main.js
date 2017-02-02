@@ -35,8 +35,8 @@ function guess() {
 //implement new functions here
 
 function showAnswer(result) {
-    let code = document.querySelector("#code > strong");
-    code.textContent = answer.value;
+    let code = document.querySelector("#code");
+    code.innerHTML = answer.value;
     if(result)
         code.classList.add("success");
     else
