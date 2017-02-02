@@ -40,7 +40,7 @@ function showAnswer(result) {
     if(result)
         code.classList.add("success");
     else
-        code.classList.add("failure");
+        code.className += " failure";
 }
 
 function showReplay() {
